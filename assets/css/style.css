@@ -1,0 +1,632 @@
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Luxurious+Roman&family=Montserrat&family=Spline+Sans:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'EB Garamond', serif;
+}
+body{
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 12vh;
+    z-index: 25;
+    background-color: #161515;
+}
+.navbar .logo{
+    width: 30px;
+    height: 30px;
+    margin: 5px 0px 5px 10px;
+}
+.nav-toggle i{
+    display: none;
+}
+.nav-toggle{
+    display: none;
+}
+.navlinks{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    width: 50vw;
+    height: 12vh;
+    position: relative;
+    float: right;
+}
+.navlinks li{
+    display: inline;
+    list-style: none;
+    padding: 5px;
+    margin: 0px 10px 0px 10px;
+    border-radius: 7px;
+}
+.navlinks li a{
+    color: white;
+    display: inline;
+    font-size: 1.2em;
+    list-style: none;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.navlinks li:hover{
+    background-color: orange;
+}
+.navlinks li:after{
+    background-color: orange;
+}
+.hero{
+    position: absolute;
+    left: 0;
+    top: 13vh;
+    height: 80vh;
+    width: 100vw;
+    margin-bottom: 1vh;
+}
+.hero::after{
+    position: absolute;
+    left: 0;
+    content: '';
+    height: 80vh;
+    width: 100vw;
+    z-index: 10;
+    background: rgba(0,0,0,0.5);
+}
+.background-video {
+    left: 0;
+    height: 80vh;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+}
+.caption{
+    position: absolute;
+    z-index: 20;
+    top: 30vh;
+    left: 30vw;
+}
+.caption p{
+    font-size: 3em;
+    color: white;
+}
+.caption p span.typed-text {
+    font-weight: normal;
+    color: #dd7732;
+}
+.caption p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+.caption p span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    scroll-behavior: smooth;
+    top: 94vh;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: 	#242424;
+}
+.about{
+    width: 98vw;
+    margin: 10px 10px 5px 10px;
+    border: 1px solid #dd7732;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about .headtext ,.contact .headtext, .courses .headtext, .projects .headtext,.skills .headtext{
+    font-size: 1.5em;
+    padding: 5px 10px 5px 0px;
+    margin: 90px 0px 15px 60px;
+    width: 10vw;
+    color: white;
+    border-bottom: 5px solid orange;
+}
+.about .content{
+    display: flex;
+    flex-direction: row;
+}
+.about .content img{
+    width: 20vw;
+    height: 40vh;
+    margin: 10px;
+}
+.about .content .info {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 2px solid royalblue;
+}
+.about .content .info p{
+   font-size: 1.2em;
+   margin: 10px 10px 10px 10px;
+   text-align: justify;
+}
+.courses{
+    width: 98vw;
+    margin: 10px 10px 5px 10px;
+    border: 1px solid #dd7732;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.courses .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.courses .content .card{
+    width: 250px;
+    margin: 10px 10px 10px 10px;
+    height: 227px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0px;
+    text-align: center;
+}
+.courses .content .card img{
+    margin: 10px;
+    width: 200px;
+    height: 140px;
+}
+.contact{
+    width: 98vw;
+    margin: 10px 10px 5px 10px;
+    border: 1px solid #dd7732;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact section .social{
+    list-style: none;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+}
+.contact section .social li{
+    list-style: none;
+    display: inline;
+    margin: 10px;
+}
+.contact section .social li a i{
+   font-size: 1.2em;
+}
+.contact section .social li a{
+   transition: font-size 0.3s ease-in;
+}
+.contact section .social li a:hover{
+    font-size: 1.5em;
+}
+.fa-twitter{
+    color: #1DA1F2;
+}
+.fa-facebook{
+    color: #4267B2;
+}
+.fa-instagram{
+    color: #E1306C;
+}
+.fa-linkedin{
+    color: #405DE6;
+}
+.projects{
+    width: 98vw;
+    margin: 10px 10px 5px 10px;
+    border: 1px solid #dd7732;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.projects .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.projects .content a{
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+}
+.projects .content .card {
+    width: 40vw;
+    margin: 10px 10px 40px 10px;
+    height: auto;
+    border-radius: 5px;
+    background-color: #009688;
+    padding: 0px;
+    text-align: center;
+}
+.projects .content .card img{
+    margin: 20px 0px 0px 0px;
+    width: 80%;
+    height: auto;
+}
+.projects .content .card p{
+    margin: 10px;
+    text-align: center;
+
+}
+.skills{
+    width: 98vw;
+    margin: 10px 10px 5px 10px;
+    border: 1px solid #dd7732;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.skills .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.skills .content .card {
+    width: 115px;
+    margin: 10px 10px 10px 10px;
+    height: 140px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0px;
+    text-align: center;
+}
+.skills .content .card img{
+    margin: 10px;
+    width: 70px;
+    height: 60px;
+}
+.contact .content .card{
+    margin: 10px 10px 10px 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px;
+    text-align: center;
+}
+.contact .content .card h3{
+    font-size: 1em;
+    margin: 5px;
+}
+.contact .content .card h3 a i{
+   color: #E1306C;
+}
+.contact .content .card h3 a {
+    font-size: 1.2em;
+    margin: 0px 0px 0px 5px;
+    transition: font-size 0.3s ease-in;
+}
+.contact .content .card h3 a:hover {
+  font-size: 1.5em;
+}
+.contact .content section p{
+   margin: 0px 0px 0px 8vw;
+}
+
+/* Responsive Design */
+
+/* For 320px to 600px devices */
+@media only screen and (min-width:320px) and (max-width:767px) {
+    .navbar{
+        height: 8vh;
+        display: flex;
+    }
+    .sidebar-close{
+        transform: translate(35vw,0vw);
+        position: absolute;
+    }
+    .navlinks {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        top: 8vh;
+        width: 35vw;
+        right: 0;
+        background-color: #34a59e;
+        z-index: 30;
+        height: 100vh;
+        transition: transform 0.3s ease-in;
+    }
+    .navlinks li{
+        display: inline;
+        list-style: none;
+        padding: 5px;
+        margin: 0px 10px 0px 10px;
+        border-radius: 7px;
+        padding: 10px 0px 10px 0px;
+        width: 35vw;
+        text-align: center;
+    }
+    .navlinks li:after{
+        display: inline;
+        list-style: none;
+        width: 35vw;
+        padding: 5px;
+        margin: 0px 10px 0px 10px;
+        border-radius: 7px;
+        padding: 10px 0px 10px 0px;
+        background-color: #242424;
+    }
+    .nav-toggle{
+        right: 2vh;
+        position: absolute;
+        cursor: pointer;
+        z-index: 55;
+        display: inline;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-toggle i{
+        width: 1em;
+        color: white;
+        display: inline;
+    }
+    .caption p{
+        font-size: 2em;
+        color: white;
+    }
+    .about {
+        width: 95vw;
+        margin: 10px 10px 10px 10px;
+    }
+    .background-video {
+        object-fit: cover;
+    }
+    .hero::after {
+        top: -4vh;
+        height: 43vh;
+    }
+    .hero{
+        top: 13vh;
+        height: 39vh;
+    }
+    .background-video {
+        height: 43vh;
+    }
+    .caption {
+        top: 15vh;
+        left: 10vw;
+    }
+    .container{
+        top: 53vh;
+    }
+    .about .headtext ,.contact .headtext, .courses .headtext, .projects .headtext, .skills .headtext{
+        font-size: 1em;
+        padding: 5px 10px 5px 0px;
+        margin: 50px 0px 15px 15px;
+        width: 10vw;
+        color: white;
+        border-bottom: 5px solid orange;
+    }
+    .about .content{
+        display: flex;
+        flex-direction: row;
+    }
+    .about .content img{
+        width: 30%;
+        height: 20%;
+        margin: 10px;
+    }
+    .about .content .info {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        border: 2px solid royalblue;
+    }
+    .about .content .info p{
+        font-size: 1em;
+        margin: 10px 10px 10px 10px;
+        text-align: justify;
+     }
+    .courses{
+        width: 95vw;
+        margin: 10px 10px 10px 10px;
+    }
+    .courses .content .card{
+        width: 80%;
+        margin: 10px 10px 10px 10px;
+        height: auto;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 0px;
+        text-align: center;
+    }
+    .courses .content .card p {
+        text-align: center;
+        margin: 15px;
+    }
+    .courses .content .card img{
+        width: 85%;
+        height: 20vh;
+    }
+    .skills .content .card{
+        width: 35%;
+        margin: 10px 10px 10px 10px;
+        height: auto;
+        border-radius: 5px;
+        padding: 0px;
+        text-align: center;
+    }
+    .skills .content .card img{
+        width: 35%;
+        height: 40%;
+    }
+    .contact{
+        width: 95vw;
+        margin: 10px 10px 10px 10px;
+    }
+    .projects{
+        width: 95vw;
+        margin: 10px 10px 10px 10px;
+    }
+    .projects .content a{
+        margin: 5px 5px;
+        font-size: 1.2em;
+    }
+    .projects .content .card {
+        width: 75vw;
+        margin: 10px 10px 25px 10px;
+        height: auto;
+        border-radius: 5px;
+        background-color: #009688;
+        padding: 0px;
+        text-align: center;
+    }
+    .projects .content .card img{
+        margin: 10px;
+        width: 80%;
+        height: auto;
+    }
+
+    
+}
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .navbar{
+        height: 8vh;
+    }
+    .navlinks li{
+        font-size: 1em;
+    }
+    .caption p{
+        font-size: 2em;
+        color: white;
+    }
+    .about {
+        width: 98vw;
+        margin: 10px 10px 10px 10px;
+    }
+    .background-video {
+        object-fit: cover;
+    }
+    .hero::after {
+        top: 0vh;
+        height: 43vh;
+    }
+    .hero{
+        top: 9vh;
+        height: 43vh;
+    }
+    .background-video {
+        height: 43vh;
+    }
+    .caption {
+        top: 15vh;
+        left: 25vw;
+    }
+    .container{
+        top: 53vh;
+    }
+    .about .headtext ,.contact .headtext, .courses .headtext, .projects .headtext, .skills .headtext{
+        font-size: 1em;
+        padding: 5px 10px 5px 0px;
+        margin: 10px 0px 15px 15px;
+        width: 10vw;
+        color: white;
+        border-bottom: 5px solid orange;
+    }
+    .about .content{
+        display: flex;
+        flex-direction: row;
+    }
+    .about .content img{
+        width: 30%;
+        height: 20%;
+        margin: 10px;
+    }
+    .about .content .info {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        border: 2px solid royalblue;
+    }
+    .about .content .info p{
+        font-size: 1em;
+        margin: 10px 10px 10px 10px;
+        text-align: justify;
+     }
+    .courses{
+        width: 98vw;
+        margin: 10px 10px 10px 10px;
+    }
+    .courses .content .card{
+        width: 40%;
+        margin: 10px 10px 20px 10px;
+        height: auto;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 15px;
+        text-align: center;
+    }
+    .skills .content .card{
+        width: 20%;
+        margin: 10px 10px 10px 10px;
+        height: auto;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 15px;
+        text-align: center;
+    }
+    .projects .content a{
+        margin: 5px 5px;
+        font-size: 1.5em;
+    }
+    .projects .content .card {
+        width: 80vw;
+        margin: 10px 10px 30px 10px;
+        height: auto;
+        border-radius: 5px;
+        background-color: #009688;
+        padding: 0px;
+        text-align: center;
+    }
+    .projects .content .card img{
+        margin: 10px;
+        width: 80%;
+        height: auto;
+    }
+    
+}
