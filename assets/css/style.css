@@ -9,6 +9,7 @@
     color: white;
     font-family: 'EB Garamond', serif;
 }
+
 body{
     width: 100vw;
     height: 100%;
@@ -158,10 +159,10 @@ body::-webkit-scrollbar{
     flex-direction: column;
 }
 
-.about .headtext ,.contact .headtext, .courses .headtext, .projects .headtext,.skills .headtext{
+.about .headtext ,.contact .headtext, .courses .headtext, .projects .headtext,.skills .headtext, .experince .headtext{
     font-size: 1.5em;
     padding: 5px 10px 5px 0px;
-    margin: 90px 0px 15px 60px;
+    margin: 15px 0px 15px 15px;
     width: 10vw;
     color: white;
     border-bottom: 5px solid orange;
@@ -254,6 +255,7 @@ body::-webkit-scrollbar{
 .fa-linkedin{
     color: #405DE6;
 }
+
 .projects{
     width: 98vw;
     margin: 10px 10px 5px 10px;
@@ -271,7 +273,7 @@ body::-webkit-scrollbar{
 .projects .content a{
     font-size: 1.2em;
     text-align: center;
-    text-decoration: none;
+    text-decoration: underline;
 }
 .projects .content .card {
     width: 40vw;
@@ -292,6 +294,60 @@ body::-webkit-scrollbar{
     text-align: center;
 
 }
+.experince{
+    width: 98vw;
+    margin: 10px 10px 5px 10px;
+    border: 1px solid #dd7732;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.experince .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.experince .content a{
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: underline;
+}
+.experince .content .card {
+    width: 98vw;
+    margin: 10px 10px 40px 10px;
+    height: auto;
+    border-radius: 5px;
+    background-color: #a34343;
+    padding: 0px;
+    text-align: center;
+}
+.experince .content .card .int {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.experince .content .card .int img{
+    margin: 20px;
+    width: 10%;
+    height: auto;
+}
+.experince .content .card .int div{
+    margin: 30px 30px 30px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.experince .content .card .int div p i{
+    font-size: 1.2em;
+}
+.experince .content .card .int div p{
+    margin: 5px;
+    text-align: justify;
+}
 .skills{
     width: 98vw;
     margin: 10px 10px 5px 10px;
@@ -311,7 +367,7 @@ body::-webkit-scrollbar{
     margin: 10px 10px 10px 10px;
     height: 140px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #607d8b;
     padding: 0px;
     text-align: center;
 }
@@ -365,7 +421,7 @@ body::-webkit-scrollbar{
         top: 8vh;
         width: 35vw;
         right: 0;
-        background-color: #34a59e;
+        background-color: #1492b8;
         z-index: 30;
         height: 100vh;
         transition: transform 0.3s ease-in;
@@ -434,10 +490,10 @@ body::-webkit-scrollbar{
     .container{
         top: 53vh;
     }
-    .about .headtext ,.contact .headtext, .courses .headtext, .projects .headtext, .skills .headtext{
+    .about .headtext ,.contact .headtext, .courses .headtext, .projects .headtext, .skills .headtext,.experince .headtext{
         font-size: 1em;
         padding: 5px 10px 5px 0px;
-        margin: 50px 0px 15px 15px;
+        margin: 15px 0px 15px 15px;
         width: 10vw;
         color: white;
         border-bottom: 5px solid orange;
@@ -521,7 +577,11 @@ body::-webkit-scrollbar{
         width: 80%;
         height: auto;
     }
-
+    .experince .content .card .int img{
+        margin: 20px;
+        width: 20%;
+        height: auto;
+    }
     
 }
 @media only screen and (min-width:768px) and (max-width:992px) {
@@ -560,10 +620,10 @@ body::-webkit-scrollbar{
     .container{
         top: 53vh;
     }
-    .about .headtext ,.contact .headtext, .courses .headtext, .projects .headtext, .skills .headtext{
+    .about .headtext ,.contact .headtext, .courses .headtext, .projects .headtext, .skills .headtext,.experince .headtext{
         font-size: 1em;
         padding: 5px 10px 5px 0px;
-        margin: 10px 0px 15px 15px;
+        margin: 15px 0px 15px 15px;
         width: 10vw;
         color: white;
         border-bottom: 5px solid orange;
