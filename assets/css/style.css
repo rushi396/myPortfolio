@@ -500,11 +500,11 @@ body::-webkit-scrollbar{
     }
     .about .content{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     .about .content img{
-        width: 30%;
-        height: 20%;
+        width: 55vw;
+        height: auto;
         margin: 10px;
     }
     .about .content .info {
